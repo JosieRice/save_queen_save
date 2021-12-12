@@ -2,7 +2,7 @@
   "name": "save_queen_save",
   "version": "1.0.0",
   "description": "Automated notifications when something you're watching goes on sale.",
-  "main": "index.ts",
+  "main": "my-app/src/App.js",
   "scripts": {
     "test": "test"
   },
@@ -20,5 +20,5 @@
   "bugs": {
     "url": "https://github.com/JosieRice/save_queen_save/issues"
   },
-  "homepage": "https://github.com/JosieRice/save_queen_save#readme"
+  "homepage": "."
 }
