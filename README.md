@@ -3,24 +3,40 @@ Automated notifications when something on your watch list goes on sale.
 
 ## TODO
 
-1. figure out where I want to host it.
+2. setup React, typescript, webpack basic project
+3. setup auth to have user login
+4. build out some frontend interface to add to your watch list and edit it
+5. setup database to save a users watch list info
+6. research chron-jobs and cloud function options for running web scrapers to look for deals
+7. write a web scraper for checking for sales
+8. setup an automated notification process (email or text or either?)
+9. test it out a bit and re-evaluate what you need
 
 
 ## Dev Notes
 
+### Current URL
+
+https://save-queen-save.web.app/
+
+### Project Console
+
+https://console.firebase.google.com/u/0/project/save-queen-save/overview
+
 ### Required for deployments
 
 1. Install Firebase CLI tools `npm install -g firebase-tools`
-2. Login to Firebase CLI `firebase login`
-3. Deploy to Firebase Hosting `firebase deploy` (verify where this deploys from? local or github I'm guessing are the options)
+2. Login to Firebase CLI `firebase login` (must be josies account)
+3. Deploy to Firebase Hosting `firebase deploy --only hosting` (note this is deploying from my local files)
+    - upgrade to be able to deploy cloud functions possibly
 
 
 ### Firebase Emulators
 
-auth emulator: 9099
-functions emulator: 5001
-firestore emulator: 8080
-database emulator: 9000
-hosting emulator: 5000
-pubsub emulator: 8085
-storage emulator: 9199
+- auth emulator: 9099
+- functions emulator: 5001
+- firestore emulator: 8080
+- database emulator: 9000
+- hosting emulator: 5000
+- pubsub emulator: 8085
+- storage emulator: 9199
