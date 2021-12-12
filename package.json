@@ -1,0 +1,24 @@
+{
+  "name": "save_queen_save",
+  "version": "1.0.0",
+  "description": "Automated notifications when something you're watching goes on sale.",
+  "main": "index.ts",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JosieRice/save_queen_save.git"
+  },
+  "keywords": [
+    "ecommerce",
+    "save",
+    "deals"
+  ],
+  "author": "Josie Rice",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JosieRice/save_queen_save/issues"
+  },
+  "homepage": "https://github.com/JosieRice/save_queen_save#readme"
+}
