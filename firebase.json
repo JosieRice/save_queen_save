@@ -10,10 +10,11 @@
     "predeploy": [
       "npm --prefix \"$RESOURCE_DIR\" run lint",
       "npm --prefix \"$RESOURCE_DIR\" run build"
-    ]
+    ],
+    "source": "functions"
   },
   "hosting": {
-    "public": "my-app/public",
+    "public": "my-app/build",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -54,5 +55,8 @@
     "ui": {
       "enabled": true
     }
+  },
+  "remoteconfig": {
+    "template": "remoteconfig.template.json"
   }
 }
