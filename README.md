@@ -3,7 +3,6 @@ Automated notifications when something on your watch list goes on sale.
 
 ## TODO
 
-2. typescript setup for react code in webpack
 3. setup auth to have user login
 4. build out some frontend interface to add to your watch list and edit it
 5. setup database to save a users watch list info
