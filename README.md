@@ -3,7 +3,6 @@ Automated notifications when something on your watch list goes on sale.
 
 ## TODO
 
-1. enable javascript error when trying to deploy react app to firebase, so fix that up...
 2. typescript setup for react code in webpack
 3. setup auth to have user login
 4. build out some frontend interface to add to your watch list and edit it
