@@ -3,7 +3,7 @@ Automated notifications when something on your watch list goes on sale.
 
 ## TODO
 
-3. setup auth to have user login
+3. setup react context and save user login state / info
 4. build out some frontend interface to add to your watch list and edit it
 5. setup database to save a users watch list info
 6. research chron-jobs and cloud function options for running web scrapers to look for deals
