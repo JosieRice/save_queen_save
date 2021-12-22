@@ -1,4 +1,5 @@
-import Auth from "./Auth";
+import SignIn from "./SignIn";
+import NavBar from "./NavBar";
 import useAuthContext from "./useAuthContext";
 
 const App = () => {
@@ -8,12 +9,14 @@ const App = () => {
     <AuthContext.Provider value={loggedIn}>
       {loggedIn === null && <div>loading</div>}
       {loggedIn !== null && (
-        <div>
-          <header>
-            <p>Save Queen Save coming soon</p>
+        <>
+          <NavBar />
+          <header style={{ textAlign: "center" }}>
+            <h1>Save Queen Save</h1>
+            <h2>Sit back and relax while we check for sales.</h2>
           </header>
-          <Auth />
-        </div>
+          <SignIn />
+        </>
       )}
     </AuthContext.Provider>
   );
