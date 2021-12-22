@@ -9,7 +9,7 @@ import reportWebVitals from "./reportWebVitals";
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyAlqW7fVlGESpJ8wx5-HUMqBtA8-5IXm5E",
-  authDomain: "save-queen-save.web.app",
+  authDomain: "save-queen-save.firebaseapp.com",
   databaseURL: "https://save-queen-save-default-rtdb.firebaseio.com",
   projectId: "save-queen-save",
   storageBucket: "save-queen-save.appspot.com",
