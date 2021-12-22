@@ -1,4 +1,5 @@
 # save_queen_save
+
 Automated notifications when something on your watch list goes on sale.
 
 ## TODO
@@ -11,12 +12,11 @@ Automated notifications when something on your watch list goes on sale.
 8. setup an automated notification process (email or text or either?)
 9. test it out a bit and re-evaluate what you need
 
-
 ## Dev Notes
 
 ### Current URL
 
-https://save-queen-save.web.app/
+https://save-queen-save.firebaseapp.com/
 
 ### Project Console
 
@@ -27,8 +27,13 @@ https://console.firebase.google.com/u/0/project/save-queen-save/overview
 1. Install Firebase CLI tools `npm install -g firebase-tools`
 2. Login to Firebase CLI `firebase login` (must be josies account)
 3. Deploy to Firebase Hosting `firebase deploy --only hosting` (note this is deploying from my local files)
-    - upgrade to be able to deploy cloud functions possibly
+   - upgrade to be able to deploy cloud functions possibly
 
+### Deploy Process
+
+1. `cd my-app`
+2. `npm run build`
+3. `firebase deploy --only hosting`
 
 ### Firebase Emulators
 
