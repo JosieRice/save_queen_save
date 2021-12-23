@@ -5,8 +5,10 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+/**
+ * Your web app's Firebase configuration
+ * For Firebase JS SDK v7.20.0 and later, measurementId is optional
+ */
 const firebaseConfig = {
   apiKey: "AIzaSyAlqW7fVlGESpJ8wx5-HUMqBtA8-5IXm5E",
   authDomain: "save-queen-save.firebaseapp.com",
@@ -18,10 +20,14 @@ const firebaseConfig = {
   measurementId: "G-EQ86K4GH45",
 };
 
-// Initialize Firebase
+/** Initialize Firebase */
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 console.log(analytics.app.name);
+
+/** initial style corrections for body */
+document.getElementsByTagName("body")[0].style.margin = "0";
+document.getElementsByTagName("body")[0].style.backgroundColor = "#FAF3DD";
 
 ReactDOM.render(
   <StrictMode>
@@ -30,7 +36,9 @@ ReactDOM.render(
   document.getElementById("root")
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+/**
+ * If you want to start measuring performance in your app, pass a function
+ * to log results (for example: reportWebVitals(console.log))
+ * or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+ */
 reportWebVitals(console.log);
