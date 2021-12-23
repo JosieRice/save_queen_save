@@ -3,42 +3,31 @@ import {
   getRedirectResult,
   GoogleAuthProvider,
   onAuthStateChanged,
+  User,
 } from "firebase/auth";
 import { createContext, useContext, useState } from "react";
 
 const useAuthContext = () => {
   /** logged in state of null is for before auth status has been checked */
   const [loggedInState, setLoggedInState] = useState<boolean | null>(null);
+  const [user, setUser] = useState<User>();
 
   const auth = getAuth();
 
   /** watches for changes in auth state and updates context as needed */
   onAuthStateChanged(auth, (user) => {
     if (user) {
-      // User is signed in, see docs for a list of available properties
-      // https://firebase.google.com/docs/reference/js/firebase.User
       setLoggedInState(true);
+      setUser(user);
     } else {
       setLoggedInState(false);
+      setUser(undefined);
     }
   });
 
   /** after authenticating on the redirect page, this gets the results of said signIn/signUp */
   getRedirectResult(auth)
-    .then((result) => {
-      console.log({ result });
-
-      if (result) {
-        // This gives you a Google Access Token. You can use it to access Google APIs.
-        const credential = GoogleAuthProvider.credentialFromResult(result);
-        const token = credential?.accessToken;
-        console.log({ token });
-
-        // The signed-in user info.
-        const user = result.user;
-        console.log({ user });
-      }
-    })
+    .then((result) => {})
     .catch((error) => {
       // Handle Errors here.
       const errorCode = error.code;
@@ -61,7 +50,7 @@ const useAuthContext = () => {
    * AuthContext is for the Provider
    * loggedIn is the value in context
    */
-  return { AuthContext, loggedIn };
+  return { AuthContext, loggedIn, user };
 };
 
 export default useAuthContext;
